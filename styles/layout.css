@@ -13,6 +13,31 @@ main {
   & .main-container {
     max-width: 33rem;
     margin-left: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .main-head {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    h1 {
+      font: 600 1.5rem/1.25 var(--font-family);
+      color: var(--text-primary);
+    }
+  }
+
+  .back {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    span {
+      font: var(--text);
+      color: var(--text-secondary);
+    }
   }
 }
 
@@ -23,5 +48,29 @@ aside {
   & .aside-container {
     max-width: 31rem;
     margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    h2 {
+      font: 600 2.5rem/1.25 var(--font-family);
+      color: var(--text-primary);
+      span {
+        color: var(--text-highlight);
+      }
+    }
+
+    .aside-head {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      img {
+        width: 12.68rem;
+      }
+    }
+    img:last-child {
+      width: 31rem;
+    }
   }
 }

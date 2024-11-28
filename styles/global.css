@@ -25,3 +25,8 @@
 body {
   overflow: hidden;
 }
+
+p {
+  font: 400 1rem/1.5 var(--font-family);
+  color: var(--text-secondary);
+}
